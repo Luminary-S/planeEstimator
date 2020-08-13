@@ -1,0 +1,23 @@
+<launch>
+    
+    <!--- Sim Time -->
+    <param name="/use_sim_time" value="true" />
+
+    <node pkg="plane_estimator" type="test_gtsam" name="plane_estimator_node" output="screen" >
+    </node>
+        <!-- <param name="port_id" value="/dev/ttyUSB0" /> 
+        <param name="baud_rate" value="115200" />
+        <param name="pub_rate" value="50.0" />
+        <param name="adjust_angle" value="0.0" />
+        <param name="gain" value = "10.0">
+        <param name="sonar_servo_topic_name" value="sonar_servo" />  -->
+    <!-- </node> -->
+    <!--- Run Rviz-->
+    <!-- <node pkg="rviz" type="rviz" name="rviz" args="-d $(find lego_loam)/launch/test.rviz" /> -->
+
+    <!--- TF -->
+    <!-- <node pkg="tf" type="static_transform_publisher" name="camera_init_to_map"  args="0 0 0 1.570795   0        1.570795 /map    /camera_init 10" />
+    <node pkg="tf" type="static_transform_publisher" name="base_link_to_camera" args="0 0 0 -1.570795 -1.570795 0        /camera /base_link   10" /> -->
+
+
+</launch>
